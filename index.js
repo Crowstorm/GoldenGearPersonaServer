@@ -25,6 +25,7 @@ app.use(passport.session());
 
 
 require('./routes/authRoutes')(app);
+require('./routes/characterRoutes')(app);
 
 
 

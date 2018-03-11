@@ -4,7 +4,15 @@ const Schema = mongoose.Schema;
 
 const userSchema = new Schema({
     googleId: String,
-    name: String
+    name: String,
+    character:{
+        name: String,
+        title: String,
+        classGame: String,
+        portrait: Number
+    }
 });
 
-mongoose.model('users', userSchema);
+const User = mongoose.model('users', userSchema);
+
+module.exports = User;
