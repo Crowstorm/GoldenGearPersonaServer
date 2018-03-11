@@ -9,16 +9,12 @@ module.exports = app =>{
         // };
         //const {id, name, title, classGame, portrait} = req.body;
 
-        // const character = new Character({
-        //     name,
-        //     title,
-        //     classGame,
-        //     portrait
+        console.log('body',req.body);
+        //res.send(req.body)
+        
+        // User.find({"googleId": req.body.id}).then(result =>{
+        //     console.log(result);
+        //     res.send(result);
         // })
-        id = "114468872587333207421"
-        User.find({"googleId": id}).then(result =>{
-            console.log(result);
-            res.send(result);
-        })
     })
 }
