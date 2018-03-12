@@ -12,9 +12,17 @@ module.exports = app =>{
         console.log('body',req.body);
         //res.send(req.body)
         
-        // User.find({"googleId": req.body.id}).then(result =>{
-        //     console.log(result);
-        //     res.send(result);
-        // })
+        User.findOneAndUpdate({"googleId": req.body.id}, { $set: { "character.name": req.body.name, "character.title": req.body.title, "character.portrait": req.body.portrait } }).then((result, err) =>{
+            console.log(result);
+            if(!err){
+                res.status(200).send({
+                    success: true,
+                    'data': result
+                });
+            } else {
+                res.send(err);
+            }
+            
+        })
     })
 }
