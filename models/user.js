@@ -9,7 +9,7 @@ const userSchema = new Schema({
         name: String,
         title: String,
         classGame: String,
-        portrait: Number,
+        portrait: String,
         statistics:{
             hp: Number,
             mp: Number,
