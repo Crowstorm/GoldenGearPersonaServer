@@ -16,7 +16,8 @@ module.exports = app => {
                     magic: 3,
                     magicResist: 3,
                     agility: 5,
-                    luck: 5
+                    luck: 5,
+                    speed: 5
                 };
                 break;
             case "thief":
@@ -28,7 +29,8 @@ module.exports = app => {
                     magic: 4,
                     magicResist: 5,
                     agility: 8,
-                    luck: 7
+                    luck: 7,
+                    speed: 8
                 };
                 break;
             case "mage":
@@ -40,7 +42,8 @@ module.exports = app => {
                     magic: 8,
                     magicResist: 7,
                     agility: 4,
-                    luck: 4
+                    luck: 4,
+                    speed: 6
                 };
                 break;
             default:
@@ -52,7 +55,8 @@ module.exports = app => {
                     magic: 0,
                     magicResist: 0,
                     agility: 0,
-                    luck: 0
+                    luck: 0, 
+                    speed: 0
                 };
                 break;
         }

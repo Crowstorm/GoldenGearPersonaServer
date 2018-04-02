@@ -18,7 +18,8 @@ const userSchema = new Schema({
             magic: Number,
             magicResist: Number,
             agility: Number,
-            luck: Number
+            luck: Number,
+            speed: Number
         }
     }
 });
